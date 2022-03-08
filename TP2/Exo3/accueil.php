@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Ezzat AL ZAHABI</title>
-        <link rel="stylesheet" href="fichiercss.css" type="text/css" media="screen" charset="utf-8" />
-    </head>
-    <body>
-        <header>
-            <h1>Ezzat AL ZAHABI</h1>
-            <img src="IMG_6818 copie.JPG" height="200px" width="200px"/>
-        </header>
+<?php
+require_once('template_header.php');
+?>
         <nav class="menu">
             <ul>
-              <li><a id="currentpage" href="accueil.html">Accueil</a></li>
-              <li><a href="competences.html">Compétences</a></li>
-              <li><a href="formations.html">Formations</a></li>
-              <li><a href="experiences.html">Expériences</a></li>
-              <li><a href="activites.html">Activités extrascolaires</a></li>
+              <li><a id="currentpage" href="accueil.php">Accueil</a></li>
+              <li><a href="competences.php">Compétences</a></li>
+              <li><a href="formations.php">Formations</a></li>
+              <li><a href="experiences.php">Expériences</a></li>
+              <li><a href="activites.php">Activités extrascolaires</a></li>
             </ul> 
         </nav>
         <div>
@@ -33,4 +24,3 @@
             </ul>
         </div>
     </body>
-</html>
