@@ -1,0 +1,14 @@
+nav.menu ul{list-style-type: none;}
+nav.menu a{
+    text-decoration: none;
+    border: 1px solid blue;
+    padding: 5px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 150px;
+    display: inline-block;
+}
+nav.menu a:hover{background-color: rgb(138, 220, 252);}
+nav.menu li {display: inline;}
+#currentpage{font-weight: bold;}

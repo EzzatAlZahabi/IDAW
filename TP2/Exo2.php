@@ -5,7 +5,7 @@
     </head>
     <body>
         <?php
-            echo date("D/F/Y")
+            echo date("d/m/Y")
         ?>
     </body>
 </html>

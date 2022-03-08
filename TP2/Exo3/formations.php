@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ezzat AL ZAHABI</title>
+        <link rel="stylesheet" href="fichiercss.css" type="text/css" media="screen" charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <h1>Ezzat AL ZAHABI</h1>
+            <img src="IMG_6818 copie.JPG" height="200px" width="200px"/>
+        </header>
+        <nav class="menu">
+            <ul>
+              <li><a href="accueil.html">Accueil</a></li>
+              <li><a href="competences.html">Compétences</a></li>
+              <li><a id="currentpage" href="formations.html">Formations</a></li>
+              <li><a href="experiences.html">Expériences</a></li>
+              <li><a href="activites.html">Activités extrascolaires</a></li>
+            </ul> 
+        </nav>
+        <div>
+            <h2>Formations</h2>
+            <p>
+                Ingénieur généraliste
+                <br>Mines de Douai, Douai 2019 - 2022
+                <ul>
+                    <li>Sciences de données : Machine Learning, Optimisation</li>
+                    <li>Qualité & Services : Gestion de qualité, Lean</li>
+                    <li>Management de projet</li>
+                </ul>
+                Classes Préparatoires aux Grandes Écoles, Filière PSI
+                <br>Lycée Champollion, Grenoble 2017 – 2019
+                <ul>
+                    <li>Mathématiques, Physique, Chimie & Sciences de l’Ingénieur</li>
+                </ul>
+                Baccalauréat Scientifique
+                <br>Lycée Saint Just, Lyon 2016 – 2017
+            </p>
+        </div>
+    </body>
+</html>
