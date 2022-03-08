@@ -1,15 +1,10 @@
 <?php
-require_once('template_header.php');
+    require_once('template_header.php');
 ?>
-        <nav class="menu">
-            <ul>
-              <li><a id="currentpage" href="accueil.php">Accueil</a></li>
-              <li><a href="competences.php">Compétences</a></li>
-              <li><a href="formations.php">Formations</a></li>
-              <li><a href="experiences.php">Expériences</a></li>
-              <li><a href="activites.php">Activités extrascolaires</a></li>
-            </ul> 
-        </nav>
+<?php
+    require_once('template_menu.php');
+    renderMenuToHTML('accueil');
+?>
         <div>
             <h2>Objectif</h2>
             <p>Recherche un stage de fin d’études en tant que Business Manager à partir du 11 avril 2022.</p>
