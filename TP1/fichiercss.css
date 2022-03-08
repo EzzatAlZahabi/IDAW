@@ -11,3 +11,4 @@ nav.menu a{
 }
 nav.menu a:hover{background-color: red;}
 nav.menu li {display: inline;}
+#currentpage{font-weight: bold;}
