@@ -1,15 +1,10 @@
 <?php
-require_once('template_header.php');
+    require_once('template_header.php');
 ?>
-        <nav class="menu">
-            <ul>
-              <li><a href="accueil.html">Accueil</a></li>
-              <li><a href="competences.html">Compétences</a></li>
-              <li><a href="formations.html">Formations</a></li>
-              <li><a id="currentpage" href="experiences.html">Expériences</a></li>
-              <li><a href="activites.html">Activités extrascolaires</a></li>
-            </ul> 
-        </nav>
+        <?php
+            require_once('template_menu.php');
+            renderMenuToHTML('experiences');
+        ?>
         <div>
             <h2>Expériences</h2>
             <p>

@@ -11,7 +11,7 @@
     foreach($mymenu as $pageId => $pageParameters) {
         echo "<li><a ";
         if ($currentPageId == $pageId)
-            echo "id=\"$pageId\" ";
+            echo "id=\"currentpage\" ";
         echo "href=\"$pageId.php\">$pageParameters[0]</a></li>\n";
     }
     echo "</ul></nav>";
