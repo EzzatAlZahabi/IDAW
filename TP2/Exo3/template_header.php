@@ -8,5 +8,6 @@
     <body>
         <header>
             <h1>Ezzat AL ZAHABI</h1>
-            <img src="IMG_6818 copie.JPG" height="200px" width="200px"/>
+            <img src="photo.jpg" height="200px" width="200px" />
         </header>
+        

@@ -1,10 +1,8 @@
 <?php
     require_once('template_header.php');
+    // require_once('template_menu.php');
+    // renderMenuToHTML('accueil');
 ?>
-        <?php
-            require_once('template_menu.php');
-            renderMenuToHTML('accueil');
-        ?>
         <div>
             <h2>Objectif</h2>
             <p>Recherche un stage de fin d’études en tant que Business Manager à partir du 11 avril 2022.</p>
@@ -18,4 +16,5 @@
                 <li>Adresse : 32 Avenue de Lauterbourg, 69160 TASSIN LA DEMI LUNE</li>
             </ul>
         </div>
-    </body>
+        </body>
+</html>
