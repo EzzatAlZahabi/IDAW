@@ -1,8 +1,3 @@
-<?php
-    require_once('template_header.php');
-    require_once('template_menu.php');
-    renderMenuToHTML('activities');
-?>
         <div>
             <h2>Activités extrascolaires</h2>
             <ul>
@@ -25,5 +20,3 @@
                 </li>
             </ul>
         </div>
-    </body>
-</html>

@@ -1,8 +1,3 @@
-<?php
-    require_once('template_header.php');
-    require_once('template_menu.php');
-    renderMenuToHTML('formations');
-?>
         <div>
             <h2>Formations</h2>
             <p>
@@ -22,5 +17,3 @@
                 <br>Lycée Saint Just, Lyon 2016 – 2017
             </p>
         </div>
-    </body>
-</html>

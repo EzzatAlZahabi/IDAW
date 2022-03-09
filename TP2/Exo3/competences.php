@@ -1,8 +1,3 @@
-<?php
-    require_once('template_header.php');
-    require_once('template_menu.php');
-    renderMenuToHTML('competences');
-?>
         <div>
             <h2>Compétences</h2>
             <ul>
@@ -31,5 +26,3 @@
                 <li>Turquie – Séjour de 18 mois</li>
             </ul>
         </div>
-    </body>
-</html>
