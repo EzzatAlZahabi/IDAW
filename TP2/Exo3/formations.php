@@ -1,10 +1,8 @@
 <?php
     require_once('template_header.php');
+    require_once('template_menu.php');
+    renderMenuToHTML('formations');
 ?>
-        <?php
-            require_once('template_menu.php');
-            renderMenuToHTML('formations');
-        ?>
         <div>
             <h2>Formations</h2>
             <p>

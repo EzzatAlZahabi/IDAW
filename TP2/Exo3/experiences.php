@@ -1,10 +1,8 @@
 <?php
     require_once('template_header.php');
+    require_once('template_menu.php');
+    renderMenuToHTML('experiences');
 ?>
-        <?php
-            require_once('template_menu.php');
-            renderMenuToHTML('experiences');
-        ?>
         <div>
             <h2>Expériences</h2>
             <p>

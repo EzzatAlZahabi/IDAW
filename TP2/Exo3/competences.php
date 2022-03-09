@@ -1,10 +1,8 @@
 <?php
     require_once('template_header.php');
+    require_once('template_menu.php');
+    renderMenuToHTML('competences');
 ?>
-        <?php
-            require_once('template_menu.php');
-            renderMenuToHTML('competences');
-        ?>
         <div>
             <h2>Compétences</h2>
             <ul>
