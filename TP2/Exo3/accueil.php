@@ -1,7 +1,7 @@
 <?php
     require_once('template_header.php');
-    // require_once('template_menu.php');
-    // renderMenuToHTML('accueil');
+    require_once('template_menu.php');
+    renderMenuToHTML('accueil');
 ?>
         <div>
             <h2>Objectif</h2>

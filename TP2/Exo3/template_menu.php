@@ -4,8 +4,8 @@
         'accueil' => array( 'Accueil' ),
         'competences' => array( 'Compétences' ),
         'formations' => array( 'Formations' ),
-        'experiences' => array('Expériences')
-        'activites' => array( 'Activités extrascolaires' ),
+        'experiences' => array('Expériences'),
+        'activites' => array( 'Activités extrascolaires' )
         );
         echo "<nav class=\"menu\"><ul>";
         foreach($mymenu as $pageId => $pageParameters) {
