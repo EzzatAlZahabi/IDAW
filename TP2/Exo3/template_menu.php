@@ -1,7 +1,7 @@
 <?php
     function renderMenuToHTML($currentPageId) {
         $mymenu = array(
-        'index' => array( 'Accueil' ),
+        'accueil' => array( 'Accueil' ),
         'competences' => array( 'Compétences' ),
         'formations' => array( 'Formations' ),
         'experiences' => array('Expériences'),
@@ -12,7 +12,7 @@
             echo "<li><a ";
             if ($currentPageId == $pageId)
                 echo "id=\"currentpage\" ";
-            echo "href=\"$pageId.php\">".$pageParameters[0]."</a></li>\n";
+            echo "href=\"http://localhost:8080/IDAW/TP2/Exo3/index.php?page=$pageId\">".$pageParameters[0]."</a></li>\n";
         }
         echo "</ul></nav>";
     }
