@@ -12,7 +12,7 @@
             echo "<li><a ";
             if ($currentPageId == $pageId)
                 echo "id=\"currentpage\" ";
-            echo "href=\"http://localhost:8080/IDAW/TP2/Exo3/index.php?page=$pageId\">".$pageParameters[0]."</a></li>\n";
+            echo "href=\"http://localhost:8080/IDAW/TP2/index.php?page=$pageId\">".$pageParameters[0]."</a></li>\n";
         }
         echo "</ul></nav>";
     }
