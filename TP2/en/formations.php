@@ -1,5 +1,5 @@
         <div>
-            <h2>Formations</h2>
+            <h2>Education</h2>
             <p>
                 Engineering school
                 <br>Mines de Douai, Douai 2019 - 2022
