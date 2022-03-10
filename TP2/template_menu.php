@@ -24,9 +24,5 @@
             }
         }
         echo "</ul></nav>";
-        if($langue == 'fr')
-            echo "<a href=\"index.php?page=$currentPageId&lang='en'\">Anglais</a>"
-        else
-            echo "<a href=\"index.php?page=$currentPageId&lang='fr'\">Français</a>"
     }
 ?>
