@@ -11,13 +11,13 @@
         foreach($mymenu as $pageId => $pageParameters) {
             echo "<li><a ";
             if ($currentPageId == $pageId){
-                if($currentLang == 'fr')
+                if($langue == 'fr')
                     echo "id=\"currentpage\" href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[0].'</a></li>';
                 else
                     echo "id=\"currentpage\" href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[1].'</a></li>';
             }
             else {
-                if($currentLang == 'fr')
+                if($langue == 'fr')
                     echo "href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[0].'</a></li>';
                 else
                     echo "href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[1].'</a></li>';
