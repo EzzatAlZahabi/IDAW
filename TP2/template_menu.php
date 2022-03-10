@@ -2,7 +2,7 @@
     function renderMenuToHTML($currentPageId,$langue) {
         $mymenu = array(
         'accueil' => array('Accueil','Home'),
-        'competences' => array('Compétences','skills'),
+        'competences' => array('Compétences','Skills'),
         'formations' => array('Formations','Education'),
         'experiences' => array('Expériences','Experience'),
         'activites' => array('Activités extrascolaires','Extracurricular activities')
@@ -12,17 +12,21 @@
             echo "<li><a ";
             if ($currentPageId == $pageId){
                 if($langue == 'fr')
-                    echo "id=\"currentpage\" href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[0].'</a></li>';
+                    echo "id=\"currentpage\" href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[0]."</a></li>";
                 else
-                    echo "id=\"currentpage\" href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[1].'</a></li>';
+                    echo "id=\"currentpage\" href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[1]."</a></li>";
             }
             else {
                 if($langue == 'fr')
-                    echo "href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[0].'</a></li>';
+                    echo "href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[0]."</a></li>";
                 else
-                    echo "href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[1].'</a></li>';
+                    echo "href=\"index.php?page=$pageId&lang=$langue\">".$pageParameters[1]."</a></li>";
             }
         }
         echo "</ul></nav>";
+    }
+
+    function changerLangue($langue) {
+
     }
 ?>
