@@ -12,8 +12,11 @@
             echo "<li><a ";
             if ($currentPageId == $pageId)
                 echo "id=\"currentpage\" ";
-            echo "href=\"http://localhost:8080/IDAW/TP2/index.php?page=$pageId\">".$pageParameters[0]."</a></li>\n";
+            echo "href=\"http://localhost:8080/IDAW/TP2/index.php\">".$pageParameters[0]."</a></li>\n";
+            include("http://localhost:8080/IDAW/TP2/fr/$pageId.php")
         }
         echo "</ul></nav>";
     }
 ?>
+
+<!-- ?page=$pageId -->

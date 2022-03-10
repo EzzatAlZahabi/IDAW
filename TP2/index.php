@@ -7,6 +7,12 @@
         $currentPageId = $_GET['page'];
     } 
     renderMenuToHTML($currentPageId);
+
+    $langue = 'fr';
+    if(isset($_GET['lang'])) {
+        $langue = $_GET['lang'];
+    } 
+
 ?>
 
 <section class="corps">
