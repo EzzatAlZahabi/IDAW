@@ -1,22 +1,22 @@
         <div>
-            <h2>Activités extrascolaires</h2>
+            <h2>Extracurricular activities</h2>
             <ul>
                 <li>
-                    Bénévolat :
-                    <br>Chantier jeune bénévole
-                    <br>Bureau Information Jeunesse, Lyon Février 2017
-                    <br>Projet de sensibilisation des jeunes sur les dangers de la drogue et de l’alcool.
+                    Volunteer work :
+                    <br>Bureau Information Jeunesse, Lyon February 2017
+                    <br>Project to raise teenagres’ awareness of the alcohol and drugs’ dangers.
                 </li>
                 <li>
-                    Sports ( Pratique en club ) :
-                    <br>Équitation – 5 ans
-                    <br>Basketball – 3 ans
-                    <br>Football – 1 an
-                    <br>Natation – 1 an
+                    Sports :
+                    <br>Showjumping – 5 years
+                    <br>Basketball – 3 years
+                    <br>Football – 1 year
+                    <br>Swimming – 1 year
                 </li>
                 <li>
-                    Vie associative :
-                    <br>Responsable du pôle Animation du Bureau des Sports des Mines de Douai
+                    Community life :
+                    <br>Member of the Sports Club at IMT Lille Douai
+                    <br>Member of the IMT Nord Europe’s integration association
                 </li>
             </ul>
         </div>

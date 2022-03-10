@@ -1,29 +1,29 @@
         <div>
-            <h2>Expériences</h2>
+            <h2>Experience</h2>
             <p>
                 Digital Product Manager Assistant
-                <br>TotalEnergies, Paris Avril 2021 – Août 2021
+                <br>TotalEnergies, Paris April 2021 – August 2021
                 <ul>
-                    <li>Accompagnement du changement à travers une transformation digitale</li>
-                    <li>Relation client : recueil du besoin et proposition de solutions</li>
-                    <li>Découverte et familiarisation avec les outils SAP et PowerBI</li>
-                    <li>Méthode Agile Kanban</li>
+                    <li>Supporting change through digital transformation</li>
+                    <li>Customer relationship: collection of needs and proposal of solutions</li>
+                    <li>Discovery and familiarization with SAP and Power BI</li>
+                    <li>Agile Kanban method</li>
                 </ul>
-                Assistant Architecte Technique
-                <br>Dassault Systèmes, Lyon Mai 2020 – Août 2020
+                Technical Architect Assistant
+                <br>Dassault Systèmes, Lyon May 2020 – August 2020
                 <ul>
-                    <li>Utilisation de commandes DOS et du langage SQL</li>
-                    <li>Définition des besoins et recherche de solutions auprès des équipes</li>
+                    <li>DOS commands and SQL language</li>
+                    <li>Defining the teams’ needs and finding solutions</li>
                 </ul>
-                Projet ouvert – Responsable sponsoring
-                <br>Mines de Douai, Douai Septembre 2019 – Mai 2020
+                Open project – Sponsorship manager
+                <br>Mines de Douai, Douai September 2019 – May 2020
                 <ul>
-                    <li>Projet visant à réaliser un dispositif avertisseur de dangers pour les cyclistes</li>
+                    <li>Project to create a warning device for cyclists</li>
                 </ul>
-                TIPE – Phénomène d’embouteillage
-                <br>Lycée Champollion, Grenoble Septembre 2018 – Avril 2019
+                Supervised project – Road traffic modeling
+                <br>Lycée Champollion, Grenoble September 2018 – April 2019
                 <ul>
-                    <li>Modélisation informatique en Python du trafic routier</li>
+                    <li>Computer modeling of road traffic in Python</li>
                 </ul>
             </p>
         </div>

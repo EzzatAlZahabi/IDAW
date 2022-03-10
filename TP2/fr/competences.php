@@ -2,7 +2,7 @@
             <h2>Compétences</h2>
             <ul>
                 <li>Pack Office</li>
-                <li>Lagages informatiques : Python, SQL, Java, HTML, R, Commandes DOS</li>
+                <li>Lagages informatiques : Python, SQL, Java, PHP, R, Commandes DOS</li>
                 <li>SAP</li>
                 <li>PowerBI</li>
                 <li>Gestion de projet</li>

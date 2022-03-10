@@ -1,28 +1,28 @@
         <div>
-            <h2>Compétences</h2>
+            <h2>Skills</h2>
             <ul>
                 <li>Pack Office</li>
-                <li>Lagages informatiques : Python, SQL, Java, HTML, R, Commandes DOS</li>
+                <li>Programming languages : Python, SQL, Java, PHP, R, Commandes DOS</li>
                 <li>SAP</li>
                 <li>PowerBI</li>
-                <li>Gestion de projet</li>
+                <li>Project Management</li>
                 <li>Lean Management</li>
             </ul>
         </div>
         <div>
-            <h2>Langues</h2>
+            <h2>Languages</h2>
             <ul>
-                <li>Français – Courant</li>
-                <li>Anglais – Niveau C1 (985 au TOEIC)</li>
-                <li>Arabe – Maternelle</li>
-                <li>Turc – Niveau C1</li>
+                <li>English – Fluent (985 at the TOIEC)</li>
+                <li>French – Fluent</li>
+                <li>Arabic – Mother tongue</li>
+                <li>Turkish – Fluent</li>
             </ul>
         </div>
         <div>
-            <h2>Informations complémentaires</h2>
+            <h2>Complementary information</h2>
             <ul>
-                <li>Syrie – Pays d’origine</li>
-                <li>Égypte – Séjour de 10 mois</li>
-                <li>Turquie – Séjour de 18 mois</li>
+                <li>Born in Syria and lived there for 13 years</li>
+                <li>Lived in Egypt for 10 months</li>
+                <li>Lived in Turkey for 18 months</li>
             </ul>
         </div>

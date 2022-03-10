@@ -11,6 +11,7 @@
         $langue = $_GET['lang'];
     }
     renderMenuToHTML($currentPageId,$langue);
+    changerLangue($currentPageId,$langue);
 ?>
 
 <section class="corps">

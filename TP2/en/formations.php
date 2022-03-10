@@ -1,19 +1,19 @@
         <div>
             <h2>Formations</h2>
             <p>
-                Ingénieur généraliste
+                Engineering school
                 <br>Mines de Douai, Douai 2019 - 2022
                 <ul>
-                    <li>Sciences de données : Machine Learning, Optimisation</li>
-                    <li>Qualité & Services : Gestion de qualité, Lean</li>
-                    <li>Management de projet</li>
+                    <li>Data Science: Machine Learning, Optimization</li>
+                    <li>Quality & Services: Quality management, Lean</li>
+                    <li>Project Management</li>
                 </ul>
-                Classes Préparatoires aux Grandes Écoles, Filière PSI
+                Undergraduate courses to prepare nationwide competitive exams in sciences
                 <br>Lycée Champollion, Grenoble 2017 – 2019
                 <ul>
-                    <li>Mathématiques, Physique, Chimie & Sciences de l’Ingénieur</li>
+                    <li>Mathematics, Physics, Chemistry & Engineering sciences</li>
                 </ul>
-                Baccalauréat Scientifique
+                A Levels in science
                 <br>Lycée Saint Just, Lyon 2016 – 2017
             </p>
         </div>
