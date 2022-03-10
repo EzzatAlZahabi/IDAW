@@ -11,11 +11,6 @@
         $langue = $_GET['lang'];
     }
     renderMenuToHTML($currentPageId,$langue);
-    
-    if($langue == 'fr')
-        echo "<nav class=\"langue\"><a href=\"index.php?page=$currentPageId&lang='en'\">Anglais</a>"
-    else
-        echo "<nav class=\"langue\"><a href=\"index.php?page=$currentPageId&lang='fr'\">Français</a>"
 ?>
 
 <section class="corps">
