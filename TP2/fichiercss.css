@@ -1,14 +1,20 @@
-nav.menu ul{list-style-type: none;}
-nav.menu a{
+
+
+
+.menu ul{list-style-type: none;}
+.menu a{
+    color: white;
+    background-color: rgb(121, 113, 234);
     text-decoration: none;
-    border: 1px solid blue;
+    border: 1px solid rgb(68, 62, 160);
     padding: 5px;
     text-align: center;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin: 2px;
     width: 150px;
     display: inline-block;
 }
-nav.menu a:hover{background-color: rgb(138, 220, 252);}
-nav.menu li {display: inline;}
+.menu a:hover{
+    opacity: 0.7;
+}
+.menu li {display: inline;}
 #currentpage{font-weight: bold;}

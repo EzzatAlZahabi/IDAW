@@ -28,7 +28,7 @@
 
     function changerLangue($currentPageId,$langue) {
         if($langue == 'fr')
-            echo "<a href=\"index.php?page=$currentPageId&lang=en\">Anglais</a>";
+            echo "<a href=\"index.php?page=$currentPageId&lang=en\">English</a>";
         else
             echo "<a href=\"index.php?page=$currentPageId&lang=fr\">Français</a>";
     }
