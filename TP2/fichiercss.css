@@ -1,7 +1,22 @@
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box ;
+}
 
+.contenu{
+    flex-basis: 100%;
+}
 
+.menu{
+    flex-basis: 100%;
+}
 
-.menu ul{list-style-type: none;}
+.menu ul{
+    list-style-type: none;
+}
+
 .menu a{
     color: white;
     background-color: rgb(121, 113, 234);
@@ -11,10 +26,10 @@
     text-align: center;
     margin: 2px;
     width: 150px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .menu a:hover{
     opacity: 0.7;
 }
-.menu li {display: inline;}
+/* .menu li {display: inline;} */
 #currentpage{font-weight: bold;}
