@@ -14,7 +14,7 @@
         if(isset($_COOKIE['style'])){
             $style_def = $_COOKIE['style'];
         }
-        echo "<link rel=\"stylesheet\" href=\"$style_def.css\" type=\"text/css\" media=\"screen\" charset=\"utf-8\" />"
+        echo "<link rel=\"stylesheet\" href=\"$style_def.css\" type=\"text/css\" media=\"screen\" charset=\"utf-8\" />";
         ?>
     </head>
     <body>
