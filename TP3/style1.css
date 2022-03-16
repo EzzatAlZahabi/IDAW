@@ -1,3 +1,7 @@
-body{
+#style_form{
+    background-color: yellow;
+}
+
+#login_form{
     background-color: yellow;
 }

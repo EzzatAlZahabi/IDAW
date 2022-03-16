@@ -3,7 +3,7 @@
     // login => password
         'riri' => 'fifi',
         'yoda' => 'maitrejedi' ,
-        'Ezzat' => 'Zahabi'
+        'Ezzat99' => 'Zahabi99'
     );
     $login = "anonymous";
     $errorText = "";
@@ -23,6 +23,6 @@
     if(!$successfullyLogged) {
     echo $errorText;
     } else {
-    echo "<h1>Bienvenu ".$login."</h1>";
+        require_once("accueil.php");
     }
 ?>
