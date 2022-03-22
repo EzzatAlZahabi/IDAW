@@ -1,6 +1,5 @@
 <?php
     session_start();
-    $_SESSION['login'] = $login;
     require_once("template_header.php");
     require_once("template_menu.php");
 
