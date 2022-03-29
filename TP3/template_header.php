@@ -1,4 +1,3 @@
-<body>
     <header>
         <?php
             echo "Votre login est ".$_SESSION['login'];
