@@ -14,10 +14,12 @@
     $query = "SELECT * FROM UTILISATEUR";
     $resultat = mysqli_query($conn,$query);
     if(mysqli_num_rows($resultat)>0){
-		while($row = mysqli_fetch_array($resultat)){
-            foreach($utilisateur as $var) {
-                echo $var." : ".$row[$var]."<br>";
-            }
-		}
+        $row = mysqli_fetch_array($resultat);
+        echo $row["NOM"];
+		// while($row = mysqli_fetch_array($resultat)){
+        //     foreach($utilisateur as $var) {
+        //         echo $var." : ".$row[$var]."<br>";
+        //     }
+		// }
 	}
 ?>
