@@ -10,6 +10,6 @@
         die('Erreur : ' .mysqli_connect_error());
     }
 
-    $query = "SELECT * FROM COMPTE";
+    $query = "SELECT * FROM UTILISATEUR";
     $resultat = mysqli_query($conn,$query);
 ?>

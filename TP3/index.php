@@ -2,6 +2,33 @@
     if(isset($_GET['css'])) {
         setcookie("style",$_GET['css']);
     }
+    $users = array(
+    // login => password
+        'riri' => 'fifi',
+        'yoda' => 'maitrejedi' ,
+        'Ezzat99' => 'Zahabi99'
+    );
+    $errorText = "";
+    $successfullyLogged = false;
+    if(isset($_POST['login']) && isset($_POST['password'])) {
+        $tryLogin=$_POST['login'];
+        $tryPwd=$_POST['password'];
+        // si login existe et password correspond
+        if( array_key_exists($tryLogin,$users) && $users[$tryLogin]==$tryPwd ) {
+            $successfullyLogged = true;
+            session_start();
+            $_SESSION['login'] = $tryLogin;
+            $_SESSION['password'] = $tryPwd;
+        } else
+            $errorText = "Erreur de login/password";
+    } else
+        $errorText = "Merci d'utiliser le formulaire de login";
+
+    if(!$successfullyLogged) {
+    echo $errorText;
+    } else {
+        // require_once("accueil.php");
+    }
 ?>
 
 <form id="style_form" action="" method="GET">
@@ -12,7 +39,7 @@
     <input type="submit" value="Appliquer" />
 </form>
 
-<form id="login_form" action="connected.php" method="POST">
+<form id="login_form" action="accueil.php" method="POST">
     <table> 
         <tr>
             <th>Login :</th>
