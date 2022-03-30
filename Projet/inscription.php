@@ -35,54 +35,47 @@
     }
 ?>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Projet</title>
-    </head>
-    <body>
-        <form id="login_form" action="" method="POST">
-            <table> 
-                <tr>
-                    <th>Nom :</th>
-                    <td><input type="text" name="NOM" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <th>Prénom :</th>
-                    <td><input type="text" name="PRENOM" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <th>Âge :</th>
-                    <td><input type="number" name="AGE" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <th>M :</th>
-                    <td><input type="radio" name="SEXE" value="M" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <th>F :</th>
-                    <td><input type="radio" name="SEXE" value="F" autocomplete="off"></td>
-                </tr>
-                <tr>
-                    <th>Autre :</th>
-                    <td><input type="radio" name="SEXE" value="Autre" autocomplete="off"></td>
-                </tr>
-                <tr>
-                    <th>Besoin énergitique :</th>
-                    <td><input type="number" name="BESOIN_ENERGITIQUE" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <th>Login :</th>
-                    <td><input type="text" name="LOGIN" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <th>Mot de passe :</th>
-                    <td><input type="password" name="PASSWORD" autocomplete="off" required></td>
-                </tr>
-                <tr>
-                    <th><button type="submit"  name="submit">Créer</button></th>
-                    <td><button type="reset"  name="reset">Réinitialiser</button></td>
-                </tr>
-            </table>
-        </form>
+<form id="login_form" action="" method="POST">
+    <table> 
+        <tr>
+            <th>Nom :</th>
+            <td><input type="text" name="NOM" autocomplete="off" required></td>
+        </tr>
+        <tr>
+            <th>Prénom :</th>
+            <td><input type="text" name="PRENOM" autocomplete="off" required></td>
+        </tr>
+        <tr>
+            <th>Âge :</th>
+            <td><input type="number" name="AGE" autocomplete="off" required></td>
+        </tr>
+        <tr>
+            <th>M :</th>
+            <td><input type="radio" name="SEXE" value="M" autocomplete="off" required></td>
+        </tr>
+        <tr>
+            <th>F :</th>
+            <td><input type="radio" name="SEXE" value="F" autocomplete="off"></td>
+        </tr>
+        <tr>
+            <th>Autre :</th>
+            <td><input type="radio" name="SEXE" value="Autre" autocomplete="off"></td>
+        </tr>
+        <tr>
+            <th>Besoin énergitique :</th>
+            <td><input type="number" name="BESOIN_ENERGITIQUE" autocomplete="off" required></td>
+        </tr>
+        <tr>
+            <th>Login :</th>
+            <td><input type="text" name="LOGIN" autocomplete="off" required></td>
+        </tr>
+        <tr>
+            <th>Mot de passe :</th>
+            <td><input type="password" name="PASSWORD" autocomplete="off" required></td>
+        </tr>
+        <tr>
+            <th><button type="submit"  name="submit">Créer</button></th>
+            <td><button type="reset"  name="reset">Réinitialiser</button></td>
+        </tr>
+    </table>
+</form>

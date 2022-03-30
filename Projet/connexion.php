@@ -28,26 +28,19 @@
     }
 ?>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Projet</title>
-    </head>
-    <body>
-        <form id="login_form" action="" method="POST">
-            <table> 
-                <tr>
-                    <th>Login :</th>
-                    <td><input type="text" name="login" autocomplete="off"></td>
-                </tr>
-                <tr>
-                    <th>Mot de passe :</th>
-                    <td><input type="password" name="password" autocomplete="off"></td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td><button type="submit"  name="submit">Connexion</button></td>
-                </tr>
-            </table>
-        </form>
+<form id="login_form" action="" method="POST">
+    <table> 
+        <tr>
+            <th>Login :</th>
+            <td><input type="text" name="login" autocomplete="off"></td>
+        </tr>
+        <tr>
+            <th>Mot de passe :</th>
+            <td><input type="password" name="password" autocomplete="off"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><button type="submit"  name="submit">Connexion</button></td>
+        </tr>
+    </table>
+</form>
