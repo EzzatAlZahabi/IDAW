@@ -11,7 +11,7 @@
         die('Erreur : ' .mysqli_connect_error());
     }
     
-    if(isset($_POST['login']) && isset($_POST['password'])){
+    if(isset($_POST['submit'])){
         $login = $_POST['login'];
         $password = $_POST['password'];
         $query = "SELECT * FROM UTILISATEUR WHERE LOGIN = '$login' AND PASSWORD = '$password'";
@@ -22,7 +22,6 @@
             $_SESSION['password'] = $password;
             $_SESSION['id'] = $row["ID_UTILISATEUR"];
             header('Location: index.php');
-            // echo $_SESSION['id'];
         }else{
             echo "Votre login ou mot de passe est incorrect";
         }
@@ -48,7 +47,7 @@
                 </tr>
                 <tr>
                     <th></th>
-                    <td><input type="submit" value="Se connecter" /></td>
+                    <td><button type="submit"  name="submit">Connexion</button></td>
                 </tr>
             </table>
         </form>

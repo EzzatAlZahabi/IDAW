@@ -16,10 +16,10 @@
     if(mysqli_num_rows($resultat)>0){
         $row = mysqli_fetch_array($resultat);
         echo $row["NOM"];
-		// while($row = mysqli_fetch_array($resultat)){
-        //     foreach($utilisateur as $var) {
-        //         echo $var." : ".$row[$var]."<br>";
-        //     }
-		// }
+		while($row = mysqli_fetch_array($resultat)){
+            foreach($utilisateur as $var) {
+                echo $var." : ".$row[$var]."<br>";
+            }
+		}
 	}
 ?>
