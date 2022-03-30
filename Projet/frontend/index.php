@@ -8,13 +8,5 @@
     echo $_SESSION['id']."<br>";
 ?>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Projet</title>
-    </head>
-    <body>
-        <a href="deconnexion.php"><button>Déconnexion</button></a>
-    </body>
-</html>
+
+<a href="deconnexion.php"><button>Déconnexion</button></a>

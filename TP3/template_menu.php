@@ -34,4 +34,7 @@
             echo "<a href=\"index.php?page=$currentPageId&lang=fr\">Français</a>";
         echo "</div>";
     }
+    function deconnexion(){
+        echo "<a href=\"deconnexion.php\"><button>Déconnexion</button></a>";
+    }
 ?>

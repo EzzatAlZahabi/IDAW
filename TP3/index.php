@@ -16,6 +16,7 @@
     }
     renderMenuToHTML($currentPageId,$langue);
     changerLangue($currentPageId,$langue);
+    deconnexion();
 ?>
 
 <section class="corps">
