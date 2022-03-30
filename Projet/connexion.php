@@ -1,9 +1,7 @@
-<?php 
-    require_once("/frontend/template_header.php");
-    require_once("/backend/connecter.php");
-?>
+<?php require_once("/backend/connecter.php"); ?>
 <!DOCTYPE html>
 <html>
+<?php require_once("/frontend/template_header.php"); ?>
 <body>
     <br><br>
     <form calss="container" method="POST">

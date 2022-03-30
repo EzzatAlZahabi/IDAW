@@ -2,9 +2,6 @@
     require_once("/frontend/template_header.php");
     require_once("/backend/connecter.php");
 ?>
-<!DOCTYPE html>
-<html>
-<body>
     <br><br>
     <form calss="container" method="POST">
         <div class="mb-3">
