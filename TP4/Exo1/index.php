@@ -13,8 +13,13 @@
     <body>
         <?php
             require_once('fonctions.php');
-            $user = readUser('19');
-            echo $user["PRENOM"];
+            if(databaseConnexion()){
+                echo "Oui";
+            }else{
+                echo "non";
+            }
+            // $user = readUser('19');
+            // echo $user["PRENOM"];
             createTable();
         ?>
         <!-- JavaScript Bundle with Popper -->
