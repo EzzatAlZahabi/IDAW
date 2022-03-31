@@ -27,8 +27,7 @@
             <th scope="col">CRUD</th>
             </tr>
         </thead>
-        <tbody id="studentsTableBody">
-        </tbody>
+        <tbody id="studentsTableBody"></tbody>
     </table>
 
     <form id="addStudentForm" action="" onsubmit="onFormSubmit();">
@@ -95,7 +94,7 @@
             <td>${students[i]['remarque']}</td>
             <td>
             <button class="btn btn-primary" onclick="supprimeLigne(${i})">Delete</button>
-            <button class="btn btn-primary" onclick="supprimeLigne(${i})">Edit</button>
+            <button class="btn btn-primary" onclick="editLigne(${i})">Edit</button>
             </td>
             </tr>`;
         }
