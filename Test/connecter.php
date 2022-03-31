@@ -1,5 +1,5 @@
 <?php
-    require_once("/backend/database.php");
+    require_once("database.php");
     if(isset($_POST['submit'])){
         $login = $_POST['login'];
         $password = $_POST['password'];
