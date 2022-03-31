@@ -308,6 +308,6 @@
 </body>
 
 </html>
-<script type="text/javascript">
-  //var table = $('#example').DataTable();
-</script>
+<!-- <script type="text/javascript">
+  var table = $('#example').DataTable();
+</script> -->
