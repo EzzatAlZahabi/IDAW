@@ -1,35 +1,32 @@
 // $(document).ready(function() {
-//     $('#tableAliment').DataTable({
-//       "fnCreatedRow": function(nRow, aData) {
-//         $(nRow).attr('id', aData[0]);
-//       },
-//       'serverSide': 'true',
-//       'processing': 'true',
-//       'paging': 'true',
-//       'order': [],
-//       'ajax': {
-//         'url': 'backend/afficherAliments.php',
-//         'type': 'post',
-//       },
-//       "aoColumnDefs": [{
-//           "bSortable": false,
-//           "aTargets": [5]
-//         },
+//   $('#example').DataTable({
+//     "fnCreatedRow": function(nRow, aData, iDataIndex) {
+//       $(nRow).attr('id', aData[0]);
+//     },
+//     'serverSide': 'true',
+//     'processing': 'true',
+//     'paging': 'true',
+//     'order': [],
+//     'ajax': {
+//       'url': 'fetch_data.php',
+//       'type': 'post',
+//     },
+//     "aoColumnDefs": [{
+//         "bSortable": false,
+//         "aTargets": [5]
 
-//       ]
-//     });
-// });
 $(document).ready(function(){
   $('#tableAliment').DataTable({
     'ajax' : {
-      'url' : 'backend/afficherAliments.php',
+      'url' : '../Projet/backend/afficherAliments.php',
       'type' : 'post',
     },
     'columns' : [
       {'data' : 'ID_ALIMENT'},
       {'data' : 'LIBELLE'},
       {'data' : 'DATE'},
-      {'data' : 'CALORIES'}
+      {'data' : 'CALORIES'},
+      {'data' : 'operations'}
     ]
   });
 });

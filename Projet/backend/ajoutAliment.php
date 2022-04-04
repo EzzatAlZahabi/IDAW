@@ -11,12 +11,12 @@
 
     if($resultat == true){
         $data = array(
-            'status'=>'true',
+            'status' => 'true',
         );
         echo json_encode($data);
     }else{
          $data = array(
-            'status'=>'false',
+            'status' => 'false',
         );
         echo json_encode($data);
     } 
