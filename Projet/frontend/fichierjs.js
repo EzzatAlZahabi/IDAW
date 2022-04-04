@@ -43,3 +43,28 @@ $(document).on('click', '.ajoutbtn', function(e) {
     alert('Fill all the required fields');
   }
 });
+
+$('#tableAliment').on('click', '.modifierbtn ', function() {
+  var table = $('#example').DataTable();
+  var trid = $(this).closest('tr').attr('id');
+  // console.log(selectedRow);
+  var id = $(this).data('id');
+  $('#exampleModal').modal('show');
+
+  $.ajax({
+    url: "get_single_data.php",
+    data: {
+      id: id
+    },
+    type: 'post',
+    success: function(data) {
+      var json = JSON.parse(data);
+      $('#nameField').val(json.username);
+      $('#emailField').val(json.email);
+      $('#mobileField').val(json.mobile);
+      $('#cityField').val(json.city);
+      $('#id').val(id);
+      $('#trid').val(trid);
+    }
+  })
+});
