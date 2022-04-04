@@ -33,7 +33,7 @@ $(document).on('click', '.ajoutbtn', function(e) {
         var status = json.status;
         if (status == 'true') {
           $('#ajoutAlimentModal').modal('hide');
-          location.reload();
+          $('#tableAliment').DataTable().ajax.reload(null, false);
         }else{
           alert('failed');
         }
@@ -59,6 +59,60 @@ $('#tableAliment').on('click', '.modifierbtn', function(e) {
       $('#libelleModifie').val(json.LIBELLE);
       $('#dateModifie').val(json.DATE);
       $('#caloriesModifie').val(json.CALORIES);
+      $('#hiddenid').val(id);
+    }
+  })
+});
+
+$(document).on('click', '.updatebtn', function(e) {
+  e.preventDefault();
+  var id = $('#hiddenid').val();
+  var libelle = $('#libelleModifie').val();
+  var date = $('#dateModifie').val();
+  var calories = $('#caloriesModifie').val();
+  if (libelle != '' && date!='' && calories!=''){
+    $.ajax({
+      url: "../Projet/backend/modifierAliment.php",
+      type: "post",
+      data: {
+        id: id,
+        libelle: libelle,
+        date: date,
+        calories: calories
+      },
+      success: function(data) {
+        var json = JSON.parse(data);
+        var status = json.status;
+        if (status == 'true') {
+          $('#modifierAlimentModal').modal('hide');
+          $('#tableAliment').DataTable().ajax.reload(null, false);
+        }else{
+          alert('Échec de modification');
+        }
+      }
+    });
+  }else{
+    alert('Veuillez compléter tous les champs');
+  }
+});
+
+$('#tableAliment').on('click', '.supprimerbtn', function(e) {
+  e.preventDefault();
+  var id = $(this).val();
+  $.ajax({
+    url: "../Projet/backend/supprimerAliment.php",
+    type: 'post',
+    data: {
+      id: id
+    },
+    success: function(data) {
+      var json = JSON.parse(data);
+      var status = json.status;
+      if (status == 'true') {
+        $('#tableAliment').DataTable().ajax.reload(null, false);
+      }else{
+        alert('Échec de suppression');
+      }
     }
   })
 });

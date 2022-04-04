@@ -11,17 +11,13 @@
             CALORIES = '$calories'
             WHERE ID_ALIMENT = '$id'";
     $resultat = mysqli_query($conn,$query);
-    $rows = mysqli_fetch_array($resultat);
-    
-    if($query == true)
-    {
+
+    if($resultat == true){
         $data = array(
             'status'=>'true',
         );
         echo json_encode($data);
-    }
-    else
-    {
+    }else{
         $data = array(
             'status'=>'false',
         );

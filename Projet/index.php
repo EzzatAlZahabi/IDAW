@@ -99,8 +99,9 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-success ajoutbtn">Modifier</button>
+        <button type="button" class="btn btn-success updatebtn">Modifier</button>
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+        <input type="hidden" id="hiddenid"></input>
       </div>
     </div>
   </div>

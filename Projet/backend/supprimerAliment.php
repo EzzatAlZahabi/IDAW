@@ -1,26 +1,17 @@
 <?php 
-include('connection.php');
-
-$user_id = $_POST['id'];
-$sql = "DELETE FROM users WHERE id='$user_id'";
-$delQuery =mysqli_query($con,$sql);
-if($delQuery==true)
-{
-	 $data = array(
-        'status'=>'success',
-       
-    );
-
-    echo json_encode($data);
-}
-else
-{
-     $data = array(
-        'status'=>'failed',
-      
-    );
-
-    echo json_encode($data);
-} 
-
+    require_once('database.php');
+    $id = $_POST['id'];
+    $query = "DELETE FROM ALIMENT WHERE ID_ALIMENT='$id'";
+    $resultat = mysqli_query($conn,$query);
+    if($resultat == true){
+        $data = array(
+            'status'=>'true',
+        );
+        echo json_encode($data);
+    }else{
+        $data = array(
+            'status'=>'false',
+        );
+        echo json_encode($data);
+    } 
 ?>
