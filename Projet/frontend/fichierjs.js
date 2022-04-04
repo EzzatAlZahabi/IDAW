@@ -1,3 +1,4 @@
+// Création et affichage de la DataTable
 $(document).ready(function(){
   $('#tableAliment').DataTable({
     'ajax' : {
@@ -14,6 +15,7 @@ $(document).ready(function(){
   });
 });
 
+// Ajout d'aliment lors du click sur le bouton Ajouter dans le Modal
 $(document).on('click', '.ajoutbtn', function(e) {
   e.preventDefault();
   var libelle = $('#libelle').val();
@@ -44,6 +46,7 @@ $(document).on('click', '.ajoutbtn', function(e) {
   }
 });
 
+// Affichage du modal lors du click sur le bouton Modifier d'un aliment
 $('#tableAliment').on('click', '.modifierbtn', function(e) {
   e.preventDefault();
   var id = $(this).val();
@@ -64,6 +67,7 @@ $('#tableAliment').on('click', '.modifierbtn', function(e) {
   })
 });
 
+// Modification d'un aliment lors du click sur le bouton Valider dans le Modal
 $(document).on('click', '.updatebtn', function(e) {
   e.preventDefault();
   var id = $('#hiddenid').val();
@@ -96,6 +100,7 @@ $(document).on('click', '.updatebtn', function(e) {
   }
 });
 
+// Suppression d'un aliment lors du click sur le bouton Supprimer d'un aliment
 $('#tableAliment').on('click', '.supprimerbtn', function(e) {
   e.preventDefault();
   var id = $(this).val();
