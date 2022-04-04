@@ -1,20 +1,3 @@
-// $(document).ready(function() {
-//   $('#example').DataTable({
-//     "fnCreatedRow": function(nRow, aData, iDataIndex) {
-//       $(nRow).attr('id', aData[0]);
-//     },
-//     'serverSide': 'true',
-//     'processing': 'true',
-//     'paging': 'true',
-//     'order': [],
-//     'ajax': {
-//       'url': 'fetch_data.php',
-//       'type': 'post',
-//     },
-//     "aoColumnDefs": [{
-//         "bSortable": false,
-//         "aTargets": [5]
-
 $(document).ready(function(){
   $('#tableAliment').DataTable({
     'ajax' : {
@@ -49,15 +32,14 @@ $(document).on('click', '.ajoutbtn', function(e) {
         var json = JSON.parse(data);
         var status = json.status;
         if (status == 'true') {
-          table = $('#tableAliment').DataTable();
-          table.draw();
           $('#ajoutAlimentModal').modal('hide');
-        } else {
+          location.reload();
+        }else{
           alert('failed');
         }
       }
     });
-  } else {
+  }else{
     alert('Fill all the required fields');
   }
 });
