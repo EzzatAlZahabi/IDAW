@@ -75,31 +75,31 @@
       <div class="modal-body">
         <div class="row my-3 align-items-center">
             <div class="col-2">
-                <label for="libelle" class="col-form-label">Libellé</label>
+                <label for="libelleModifie" class="col-form-label">Libellé</label>
             </div>
             <div class="col-10">
-                <input type="text" class="form-control" id="libelle" autocomplete="off">
+                <input type="text" class="form-control" id="libelleModifie" autocomplete="off">
             </div>
         </div>
         <div class="row my-3 align-items-center">
             <div class="col-2">
-                <label for="date" class="col-form-label">Date</label>
+                <label for="dateModifie" class="col-form-label">Date</label>
             </div>
             <div class="col-10">
-                <input type="date" class="form-control" id="date" autocomplete="off">
+                <input type="date" class="form-control" id="dateModifie" autocomplete="off">
             </div>
         </div>
         <div class="row my-3 align-items-center">
             <div class="col-2">
-                <label for="calories" class="col-form-label">Calories</label>
+                <label for="caloriesModifie" class="col-form-label">Calories</label>
             </div>
             <div class="col-10">
-                <input type="number" class="form-control" id="calories" autocomplete="off">
+                <input type="number" class="form-control" id="caloriesModifie" autocomplete="off">
             </div>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-success ajoutbtn">Ajouter</button>
+        <button type="button" class="btn btn-success ajoutbtn">Modifier</button>
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
       </div>
     </div>

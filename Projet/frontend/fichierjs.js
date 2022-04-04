@@ -44,27 +44,21 @@ $(document).on('click', '.ajoutbtn', function(e) {
   }
 });
 
-$('#tableAliment').on('click', '.modifierbtn ', function() {
-  var table = $('#example').DataTable();
-  var trid = $(this).closest('tr').attr('id');
-  // console.log(selectedRow);
-  var id = $(this).data('id');
-  $('#exampleModal').modal('show');
-
+$('#tableAliment').on('click', '.modifierbtn', function(e) {
+  e.preventDefault();
+  var id = $(this).val();
+  $('#modifierAlimentModal').modal('show');
   $.ajax({
-    url: "get_single_data.php",
+    url: "../Projet/backend/trouverAliment.php",
+    type: 'post',
     data: {
       id: id
     },
-    type: 'post',
     success: function(data) {
       var json = JSON.parse(data);
-      $('#nameField').val(json.username);
-      $('#emailField').val(json.email);
-      $('#mobileField').val(json.mobile);
-      $('#cityField').val(json.city);
-      $('#id').val(id);
-      $('#trid').val(trid);
+      $('#libelleModifie').val(json.LIBELLE);
+      $('#dateModifie').val(json.DATE);
+      $('#caloriesModifie').val(json.CALORIES);
     }
   })
 });
