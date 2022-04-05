@@ -119,7 +119,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-success updatebtn">Valider</button>
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
-        <input type="hidden" id="hiddenid"></input> // Champ masqué pour stocker l'id de l'aliment pour modification ou suppression
+        <input type="hidden" id="hiddenid"></input> <!-- Champ masqué pour stocker l'id de l'aliment pour modification ou suppression -->
       </div>
     </div>
   </div>
