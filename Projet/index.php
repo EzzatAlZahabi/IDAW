@@ -40,8 +40,8 @@
       echo "erreur";
         // require_once("error.php");
       }
-      ?>
-  </div>  
+    ?>
+  </div>
 </div>
 
 <?php 
