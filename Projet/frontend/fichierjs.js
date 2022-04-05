@@ -128,3 +128,7 @@ $('.nav-link').on('click', function(e) {
   $(this).parent().siblings().children().removeClass('active');
   $(this).addClass('active');
 });
+
+// $(document).ready(function(){
+//   $('.nav-link').attr(href, 'frontend/profil.php');
+// });
