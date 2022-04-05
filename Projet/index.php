@@ -9,19 +9,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Journal</a>
+            <a class="nav-link" href="frontend/journal.php">Journal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profil</a>
+            <a class="nav-link" href="frontend/profil.php">Profil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Aliments</a>
+            <a class="nav-link" href="frontend/aliments.php">Aliments</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <h1 class="text-center">Accueil</h1>
   <div class="my-2">
       <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ajoutAlimentModal">Ajouter un aliment</button>
       <a href="backend/deconnexion.php"><button type="button" class="btn btn-danger" style="float: right;">Déconnexion</button></a>
