@@ -4,27 +4,29 @@
 ?>
 
 <div class="container my-3">
+  <!-- Menu -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="frontend/journal.php">Journal</a>
+            <a class="nav-link" href="">Journal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="frontend/profil.php">Profil</a>
-          </li>
+            <a class="nav-link" href="">Profil</a> 
           <li class="nav-item">
-            <a class="nav-link" href="frontend/aliments.php">Aliments</a>
+            <a class="nav-link" href="">Aliments</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- Boutons -->
   <div class="my-2">
       <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ajoutAlimentModal">Ajouter un aliment</button>
       <a href="backend/deconnexion.php"><button type="button" class="btn btn-danger" style="float: right;">Déconnexion</button></a>
   </div>
+  <!-- Tableau -->
   <table id="tableAliment" class="table table-dark table-hover">
     <thead>
       <th>Id</th>
