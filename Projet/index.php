@@ -3,23 +3,40 @@
     require_once('backend/security.php');
 ?>
 
-<div class="container my-5">
-    <h1 class="text-center">Accueil</h1>
-        <div class="my-2">
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ajoutAlimentModal">Ajouter un aliment</button>
-            <a href="backend/deconnexion.php"><button type="button" class="btn btn-danger" style="float: right;">Déconnexion</button></a>
-        </div>
-        <table id="tableAliment" class="table table-dark table-hover">
-        <thead>
-            <th>Id</th>
-            <th>Libellé</th>
-            <th>Date</th>
-            <th>Calories</th>
-            <th>Opérations</th>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+<div class="container my-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Journal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aliments</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 class="text-center">Accueil</h1>
+  <div class="my-2">
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ajoutAlimentModal">Ajouter un aliment</button>
+      <a href="backend/deconnexion.php"><button type="button" class="btn btn-danger" style="float: right;">Déconnexion</button></a>
+  </div>
+  <table id="tableAliment" class="table table-dark table-hover">
+    <thead>
+      <th>Id</th>
+      <th>Libellé</th>
+      <th>Date</th>
+      <th>Calories</th>
+      <th>Opérations</th>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
 </div>
 
 <!-- Modal Ajout Aliment -->

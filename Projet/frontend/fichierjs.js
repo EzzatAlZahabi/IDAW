@@ -121,3 +121,10 @@ $('#tableAliment').on('click', '.supprimerbtn', function(e) {
     }
   })
 });
+
+// Onglet actif du menu
+$('.nav-link a').on('click', function(e) {
+  e.preventDefault();
+  $(this).parent().siblings().children().removeClass('active');
+  $(this).addClass('active');
+})
