@@ -1,6 +1,6 @@
 <?php
     require_once('frontend/template_header.php');
-    require_once('backend/security.php');
+    //require_once('backend/security.php');
 ?>
 
 <div class="container my-3">

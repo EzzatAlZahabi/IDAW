@@ -1,38 +1,65 @@
 <?php
-    require_once('frontend/template_header.php');
-    require_once('backend/security.php');
+    require_once('template_header.php');
 ?>
 
-<div>
-    <button type="button" class="btn btn-dark" id="addLog">Ajouter une entrée</button>
-    <input type="date" placeholder="Rechercher par date">
-//formulaire apparait seulement après click sur bouton ajouter une entrée
-    <form action="" id="logForm">
-      <div>
-          <label for="intituleRepas">Intitulé du repas</label>
-          <input type="text" id="intituleRepas" autocomplete="off"/>
-      <div>
-      <div>
-          <label for="dateRepas">Date</label>
-          <input type="date" id="dateRepas" autocomplete="off"/>
-      <div>
-      <input type="hidden" id="hidden"/>
-      <button id="logSave">Enregistrer</button>
-      <button id="logCancel">Annuler</button>
-    </form>
 
-        <table>
-            <thead>
+
+<section class="container mt-1">
+
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" id="addLog">Ajouter une entrée</button>
+        <button type="button" class="btn btn-dark" id="cancelAdd">Annuler</button>
+    </div>
+
+    <form action="" class="mt-4" id="logForm"> 
+      <div class="form-group">
+          <label for="intituleRepas">Intitulé du repas</label>
+          <input type="text" class="form-control" id="intituleRepas" autocomplete="off"/>
+      </div>
+      <div class="form-group" id="formNbRepas">
+          <label for="nbAliments">Nombre d'aliments</label>
+          <input type="number" class="form-control" id="nbRepas" autocomplete="off"/>
+        <!--<button type="button" class="btn btn-outline-primary btn-sm" id="checkNb">Valider</button> -->
+      </div>
+      <div id="caseAlimentAjoute">
+        <label for="aliment">Aliment</label>
+        <input type="text" class="form-control" id="nbRepas" autocomplete="off"/>
+      </div>
+      <div class="form-group">
+          <label for="dateRepas">Date</label>
+          <input type="date" class="form-control" id="dateRepas" autocomplete="off"/>
+      </div>
+      <input type="hidden" id="hidden" class="form-contro"/>
+      <p></p>
+      <button id="logSave" class="btn btn-primary" >Enregistrer</button>
+      <button id="logCancel" class="btn btn-danger">Annuler</button>    
+    </form>
+    <p></p>
+    <div id="contenu">
+        <form class="mt-3">
+            <div class="form-group">
+                <label for="rechercherDate">Rechercher une entrée</label>
+                <input type="date" class="form-control" >
+            </div>
+        </form>
+        <h1 class="text-center">Journal</h1>
+        <table class="table table-dark table-hovered">
+            <thead class="thead-light">
                 <tr>
                     <th scope="col">Intitulé</th>
                     <th scope="col">Date</th>
-                    <th scope="col">Modifier</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
     </div>
-*
+</section>
+
+<script type="module" src="journal.js"></script>    
+
+<?php require_once('frontend/template_footer.php'); ?>
+
 
     

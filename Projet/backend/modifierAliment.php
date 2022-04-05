@@ -5,7 +5,7 @@
     $date = $_POST['date'];
     $calories = $_POST['calories'];
 
-    $query = "UPDATE ALIMENT SET
+    $query = "UPDATE aliment SET
             LIBELLE = '$libelle',
             DATE = '$date',
             CALORIES = '$calories'

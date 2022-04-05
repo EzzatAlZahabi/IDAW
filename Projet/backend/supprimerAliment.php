@@ -1,7 +1,7 @@
 <?php 
     require_once('database.php');
     $id = $_POST['id'];
-    $query = "DELETE FROM ALIMENT WHERE ID_ALIMENT='$id'";
+    $query = "DELETE FROM aliment WHERE ID_ALIMENT='$id'";
     $resultat = mysqli_query($conn,$query);
     if($resultat == true){
         $data = array(

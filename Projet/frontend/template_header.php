@@ -9,5 +9,7 @@
     <!-- DataTable CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.css"/>
     <title>Projet</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="journal.js"></script>
 </head>
 <body>
