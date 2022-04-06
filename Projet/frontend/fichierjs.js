@@ -132,26 +132,19 @@ $('.nav-link').on('click', function(e) {
 // Afficher les infos de l'utilisateur dans la page Profil
 $(document).on('click', '#menuProfil', function(e) {
   // e.preventDefault();
-  $('input[name="NOM"]').val($_SESSION['nom']);
-  $('input[name="PRENOM"]').val($_SESSION['prenom']);
-  $('input[name="SEXE"]').val($_SESSION['sexe']);
-  $('input[name="AGE"]').val($_SESSION['age']);
-  $('input[name="BESOIN_ENERGITIQUE"]').val($_SESSION['besoin']);
-  $('input[name="LOGIN"]').val($_SESSION['login']);
-  $('input[name="PASSWORD"]').val($_SESSION['password']);
-  console.log($_SESSION['nom']);
-  // $.ajax({
-  //   url: "../Projet/backend/trouverAliment.php",
-  //   type: 'post',
-  //   data: {
-  //     id: id
-  //   },
-  //   success: function(data) {
-  //     var json = JSON.parse(data);
-  //     $('#libelleModifie').val(json.LIBELLE);
-  //     $('#dateModifie').val(json.DATE);
-  //     $('#caloriesModifie').val(json.CALORIES);
-  //     $('#hiddenid').val(id);
-  //   }
-  // })
+  $.ajax({
+    url: "../Projet/backend/trouverUser.php",
+    type: 'post',
+    success: function(data) {
+      var json = JSON.parse(data);
+      $('input[name="NOM"]').val(json.nom);
+      $('input[name="PRENOM"]').val(json.prenom);
+      $('input[name="SEXE"]').val(json.sexe);
+      $('input[name="AGE"]').val(json.age);
+      $('input[name="BESOIN_ENERGITIQUE"]').val(json.besoin);
+      $('input[name="LOGIN"]').val(json.login);
+      $('input[name="PASSWORD"]').val(json.password);
+      console.log(json.nom);
+    }
+  })
 });
