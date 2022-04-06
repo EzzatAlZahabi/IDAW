@@ -35,7 +35,7 @@
     </form>
     <p></p>
     <div id="contenu">
-        <form class="mt-3">
+        <form class="mt-4">
             <div class="form-group">
                 <label for="rechercherDate">Rechercher une entrée</label>
                 <input type="date" class="form-control" >
