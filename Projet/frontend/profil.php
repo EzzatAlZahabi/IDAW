@@ -1,6 +1,6 @@
 <?php 
     // Connexion à la BDD
-    require_once('../Projet_final/backend/database.php');
+    require_once('../Projet/backend/database.php');
     if(isset($_POST['valider'])){
         // Récupération des données saisies
         $id = $_session['id'];
