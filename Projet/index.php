@@ -1,6 +1,11 @@
 <?php
+<<<<<<< HEAD
+    require_once('frontend/template_header.php');
+    //require_once('backend/security.php');
+=======
   require_once('frontend/template_header.php');
   require_once('backend/security.php');
+>>>>>>> bab966dec6f834a1075914354a401920440703bd
 ?>
 
 <div class="container my-3">
