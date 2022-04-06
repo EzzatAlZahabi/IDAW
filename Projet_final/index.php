@@ -10,15 +10,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.php?page=dashboard"><button type="button" class="btn btn-dark menubtn" value="dashboard">Dashboard</button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.php?page=journal"><button type="button" class="btn btn-dark menubtn" value="journal">Journal</button></a>
+            <a class="nav-link" href="index.php?page=aliments"><button type="button" class="btn btn-dark menubtn" value="aliments">Aliments</button></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.php?page=profil"><button type="button" class="btn btn-dark menubtn" value="profil">Profil</button></a> 
           <li class="nav-item">
-            <a class="nav-link" href="index.php?page=aliments"><button type="button" class="btn btn-dark menubtn" value="aliments">Aliments</button></a>
+            <a class="nav-link" href="index.php?page=journal"><button type="button" class="btn btn-dark menubtn" value="journal">Journal</button></a>
           </li>
         </ul>
         <a href="backend/deconnexion.php"><button type="button" class="btn btn-outline-danger btn-sm menubtn" style="float: right;">Déconnexion</button></a>
@@ -27,7 +24,7 @@
   </nav>
   <div id="afficherPage">
   <?php
-      $currentPage = 'dashboard';
+      $currentPage = 'aliments';
       if(isset($_GET['page'])) {
         $currentPage = $_GET['page'];
       } 
