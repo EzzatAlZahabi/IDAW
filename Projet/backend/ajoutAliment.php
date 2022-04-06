@@ -6,7 +6,7 @@
         $date = $_POST['date'];
         $calories = $_POST['calories'];
     }
-    $query = "INSERT INTO aliment (LIBELLE, DATE, CALORIES) VALUES ('$libelle', '$date', '$calories')";
+    $query = "INSERT INTO ALIMENT (LIBELLE, DATE, CALORIES) VALUES ('$libelle', '$date', '$calories')";
     $resultat = mysqli_query($conn,$query);
 
     if($resultat == true){

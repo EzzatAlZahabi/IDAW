@@ -1,6 +1,6 @@
 <?php 
     require_once('database.php');
-    $query = "SELECT * FROM aliment";
+    $query = "SELECT * FROM ALIMENT";
     $resultat = mysqli_query($conn,$query);
     $data = array();
     $compteur = 0;

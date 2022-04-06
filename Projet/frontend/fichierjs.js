@@ -123,28 +123,59 @@ $('#tableAliment').on('click', '.supprimerbtn', function(e) {
 });
 
 // Onglet actif du menu
-$('.nav-link').on('click', function(e) {
+$(document).on('click', '.menubtn', function(e) {
   // e.preventDefault();
   $(this).parent().siblings().children().removeClass('active');
   $(this).addClass('active');
+  // window.location = '../Projet/frontend/'+$(this).val()+'.php';
+  // $('#afficherPage').load('../Projet/frontend/'+$(this).val()+'.php');
 });
 
 // Afficher les infos de l'utilisateur dans la page Profil
-$(document).on('click', '#menuProfil', function(e) {
-  // e.preventDefault();
-  $.ajax({
-    url: "../Projet/backend/trouverUser.php",
-    type: 'post',
-    success: function(data) {
-      var json = JSON.parse(data);
-      $('input[name="NOM"]').val(json.nom);
-      $('input[name="PRENOM"]').val(json.prenom);
-      $('input[name="SEXE"]').val(json.sexe);
-      $('input[name="AGE"]').val(json.age);
-      $('input[name="BESOIN_ENERGITIQUE"]').val(json.besoin);
-      $('input[name="LOGIN"]').val(json.login);
-      $('input[name="PASSWORD"]').val(json.password);
-      console.log(json.nom);
-    }
+// $(document).on('click', '#menuProfil', function(e) {
+//   // e.preventDefault();
+//   $.ajax({
+//     url: "../Projet/backend/trouverUser.php",
+//     type: 'post',
+//     success: function(data) {
+//       var json = JSON.parse(data);
+//       $('input[name="NOM"]').val(json.nom);
+//       $('input[name="PRENOM"]').val(json.prenom);
+//       $('input[name="SEXE"]').val(json.sexe);
+//       $('input[name="AGE"]').val(json.age);
+//       $('input[name="BESOIN_ENERGITIQUE"]').val(json.besoin);
+//       $('input[name="LOGIN"]').val(json.login);
+//       $('input[name="PASSWORD"]').val(json.password);
+//     }
+//   })
+// });
+
+$("#logForm").hide();
+$(document).ready(function(){
+    $("#cancelAdd").click(function(){
+      $("#logForm").hide();
+    });
+    $("#addLog").click(function(){
+      $("#logForm").show();
+    });
+  });
+
+
+$(document).ready(function(){
+    $("#addLog").click(function(){
+      $("#contenu").hide();
+    });
+    $("#cancelAdd").click(function(){
+        $("#contenu").show();
+      })
   })
-});
+
+$(document).ready(function(){
+    $("#caseAliment").hide();
+})
+
+
+$(document).on('input', '#nbRepas', function(){
+    var nbCaseAjoute = $("#nbRepas").val();
+    $("#caseAliment:ltnbCaseAjoute").show();
+})

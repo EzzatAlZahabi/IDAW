@@ -1,16 +1,22 @@
-<?php
-    require_once('template_header.php');
-?>
-
-
-
 <section class="container mt-1">
 
     <div class="btn-group" role="group">
         <button type="button" class="btn btn-primary" id="addLog">Ajouter une entrée</button>
         <button type="button" class="btn btn-dark" id="cancelAdd">Annuler</button>
     </div>
-
+    <h1 class="text-center">Journal</h1>
+        <table class="table table-dark table-hovered">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Intitulé</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
     <form action="" class="mt-4" id="logForm"> 
       <div class="form-group">
           <label for="intituleRepas">Intitulé du repas</label>
@@ -41,24 +47,6 @@
                 <input type="date" class="form-control" >
             </div>
         </form>
-        <h1 class="text-center">Journal</h1>
-        <table class="table table-dark table-hovered">
-            <thead class="thead-light">
-                <tr>
-                    <th scope="col">Intitulé</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        
     </div>
 </section>
-
-<script type="module" src="journal.js"></script>    
-
-<?php require_once('frontend/template_footer.php'); ?>
-
-
-    
