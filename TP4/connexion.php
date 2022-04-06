@@ -17,6 +17,11 @@
                 $_SESSION['login'] = $login;
                 $_SESSION['password'] = $password;
                 $_SESSION['id'] = $checkUserRow["ID_UTILISATEUR"];
+                $_SESSION['nom'] = $checkUserRow["NOM"];
+                $_SESSION['prenom'] = $checkUserRow["PRENOM"];
+                $_SESSION['age'] = $checkUserRow["AGE"];
+                $_SESSION['sexe'] = $checkUserRow["SEXE"];
+                $_SESSION['besoin'] = $checkUserRow["BESOIN"];
                 header('Location: ../index.php');
             }else{
                 echo "Mot de passe incorrect";
@@ -30,18 +35,19 @@
         header('Location: inscription.php');
     }   
 ?>
-    <br><br>
-    <form method="POST">
-        <div class="container">
-            <div class="mb-3">
-                <input type="email" class="form-control" name="login" autocomplete="off" placeholder="Login">
-            </div>
-            <div class="mb-3">
-                <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                <button type="submit" class="btn btn-dark" name="submit">Se connecter</button>
-                <button type="submit" class="btn btn-dark" name="inscription">S'inscrire</button>
-            </div>
+
+<br><br>
+<form method="POST">
+    <div class="container">
+        <div class="mb-3">
+            <input type="email" class="form-control" name="login" autocomplete="off" placeholder="Login">
         </div>
-    </form>
+        <div class="mb-3">
+            <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button type="submit" class="btn btn-dark" name="submit">Se connecter</button>
+            <button type="submit" class="btn btn-dark" name="inscription">S'inscrire</button>
+        </div>
+    </div>
+</form>

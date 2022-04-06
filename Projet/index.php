@@ -21,7 +21,7 @@
             <a class="nav-link" href="index.php?page=journal">Journal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?page=profil">Profil</a> 
+            <a class="nav-link" href="index.php?page=profil" id="menuProfil">Profil</a> 
           <li class="nav-item">
             <a class="nav-link" href="index.php?page=aliments">Aliments</a>
           </li>
