@@ -131,7 +131,7 @@ $('.nav-link').on('click', function(e) {
 
 // Afficher les infos de l'utilisateur dans la page Profil
 $(document).on('click', '#menuProfil', function(e) {
-  // e.preventDefault();
+  e.preventDefault();
   $('input[name="NOM"]').val($_SESSION['nom']);
   $('input[name="PRENOM"]').val($_SESSION['prenom']);
   $('input[name="SEXE"]').val($_SESSION['sexe']);
