@@ -31,8 +31,7 @@
       </div>
       <input type="hidden" id="hidden" class="form-contro"/>
       <p></p>
-      <button id="logSave" class="btn btn-primary" >Enregistrer</button>
-      <button id="logCancel" class="btn btn-danger">Annuler</button>    
+      <button id="logSave" class="btn btn-primary" >Enregistrer</button>   
     </form>
     <p></p>
     <div id="contenu">

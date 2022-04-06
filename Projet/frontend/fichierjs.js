@@ -124,11 +124,7 @@ $('#tableAliment').on('click', '.supprimerbtn', function(e) {
 
 // Onglet actif du menu
 $('.nav-link').on('click', function(e) {
-  e.preventDefault();
+  // e.preventDefault();
   $(this).parent().siblings().children().removeClass('active');
   $(this).addClass('active');
 });
-
-// $(document).ready(function(){
-//   $('.nav-link').attr(href, 'frontend/profil.php');
-// });
