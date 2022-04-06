@@ -1,9 +1,9 @@
 <?php
     session_start();
     $servername = 'localhost';
-    $username = 'IDAW';
-    $mdp = 'IDAW';
-    $dbname = 'idawProjet';
+    $username = 'root';
+    $mdp = 'root';
+    $dbname = 'idaw';
 
     $conn = mysqli_connect($servername, $username, $mdp, $dbname);
     if(!$conn){

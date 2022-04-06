@@ -2,7 +2,7 @@
 $(document).ready(function(){
   $('#tableAliment').DataTable({
     'ajax' : {
-      'url' : '../Projet/backend/afficherAliments.php',
+      'url' : '../Projet_final/backend/afficherAliments.php',
       'type' : 'post',
     },
     'columns' : [
@@ -23,7 +23,7 @@ $(document).on('click', '.ajoutbtn', function(e) {
   var calories = $('#calories').val();
   if (libelle != '' && date!='' && calories!=''){
     $.ajax({
-      url: "../Projet/backend/ajoutAliment.php",
+      url: "../Projet_final/backend/ajoutAliment.php",
       type: "post",
       data: {
         libelle: libelle,
@@ -52,7 +52,7 @@ $('#tableAliment').on('click', '.modifierbtn', function(e) {
   var id = $(this).val();
   $('#modifierAlimentModal').modal('show');
   $.ajax({
-    url: "../Projet/backend/trouverAliment.php",
+    url: "../Projet_final/backend/trouverAliment.php",
     type: 'post',
     data: {
       id: id
@@ -76,7 +76,7 @@ $(document).on('click', '.updatebtn', function(e) {
   var calories = $('#caloriesModifie').val();
   if (libelle != '' && date!='' && calories!=''){
     $.ajax({
-      url: "../Projet/backend/modifierAliment.php",
+      url: "../Projet_final/backend/modifierAliment.php",
       type: "post",
       data: {
         id: id,
@@ -105,7 +105,7 @@ $('#tableAliment').on('click', '.supprimerbtn', function(e) {
   e.preventDefault();
   var id = $(this).val();
   $.ajax({
-    url: "../Projet/backend/supprimerAliment.php",
+    url: "../Projet_final/backend/supprimerAliment.php",
     type: 'post',
     data: {
       id: id
@@ -123,35 +123,29 @@ $('#tableAliment').on('click', '.supprimerbtn', function(e) {
 });
 
 // Onglet actif du menu
-$('.nav-link').on('click', function(e) {
+$(document).on('click', '.menubtn', function(e) {
   // e.preventDefault();
   $(this).parent().siblings().children().removeClass('active');
   $(this).addClass('active');
+  // window.location = '../Projet_final/frontend/'+$(this).val()+'.php';
+  // $('#afficherPage').load('../Projet_final/frontend/'+$(this).val()+'.php');
 });
 
 // Afficher les infos de l'utilisateur dans la page Profil
 $(document).on('click', '#menuProfil', function(e) {
-  e.preventDefault();
-  $('input[name="NOM"]').val($_SESSION['nom']);
-  $('input[name="PRENOM"]').val($_SESSION['prenom']);
-  $('input[name="SEXE"]').val($_SESSION['sexe']);
-  $('input[name="AGE"]').val($_SESSION['age']);
-  $('input[name="BESOIN_ENERGITIQUE"]').val($_SESSION['besoin']);
-  $('input[name="LOGIN"]').val($_SESSION['login']);
-  $('input[name="PASSWORD"]').val($_SESSION['password']);
-  console.log($_SESSION['nom']);
-  // $.ajax({
-  //   url: "../Projet/backend/trouverAliment.php",
-  //   type: 'post',
-  //   data: {
-  //     id: id
-  //   },
-  //   success: function(data) {
-  //     var json = JSON.parse(data);
-  //     $('#libelleModifie').val(json.LIBELLE);
-  //     $('#dateModifie').val(json.DATE);
-  //     $('#caloriesModifie').val(json.CALORIES);
-  //     $('#hiddenid').val(id);
-  //   }
-  // })
+  // e.preventDefault();
+  $.ajax({
+    url: "../Projet/backend/trouverUser.php",
+    type: 'post',
+    success: function(data) {
+      var json = JSON.parse(data);
+      $('input[name="NOM"]').val(json.nom);
+      $('input[name="PRENOM"]').val(json.prenom);
+      $('input[name="SEXE"]').val(json.sexe);
+      $('input[name="AGE"]').val(json.age);
+      $('input[name="BESOIN_ENERGITIQUE"]').val(json.besoin);
+      $('input[name="LOGIN"]').val(json.login);
+      $('input[name="PASSWORD"]').val(json.password);
+    }
+  })
 });

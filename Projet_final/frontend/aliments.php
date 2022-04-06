@@ -1,5 +1,4 @@
-<!-- <div class="container my-3"> -->
-  <!-- Bouton -->
+<!-- Bouton -->
   <div class="my-2">
       <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ajoutAlimentModal">Ajouter un aliment</button>
   </div>
@@ -100,4 +99,3 @@
       </div>
     </div>
   </div>
-<!-- </div> -->
